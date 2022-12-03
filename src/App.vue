@@ -1,18 +1,18 @@
-  <script>
-  import HelloWorldVue from "./components/HelloWorld.vue";
-  export default {
-    name: "App",
-    components: {
-      HelloWorld: HelloWorldVue,
-    },
-  };
-  </script>
-
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <b-button variant="success">Button</b-button>
-  <HelloWorld msg="Hello Vue 3 in CodeSandbox!" />
+  <img alt="Vue logo" src="./assets/logo.png">
+  <IndexPage msg="Index page " />
 </template>
+
+<script>
+
+import IndexPage from './components/IndexPage.vue'
+export default {
+  name: 'App',
+  components:{
+    IndexPage
+  }
+}
+</script>
 
 <style>
 #app {
