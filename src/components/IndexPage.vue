@@ -1,5 +1,7 @@
 <template>
   <div class="IndexPage container">
+    <router-link type="button" class="btn btn-primary" to="AddUser">add</router-link>
+    <router-link type="button" class="btn btn-primary" to="MyHome">Home</router-link>
     <table class="table mt-5">
       <thead class="thead-dark">
         <tr>
@@ -34,10 +36,28 @@
 </template>
 
 <script>
+// import axios from 'axios'
+
 export default {
   name: 'IndexPage',
   props: {
     msg: String
+  },
+  methods: {
+    // async getData() {
+    //   let data = await axios.get("http://localhost:3000/users")
+    //     .then(function (response) {
+    //       // handle success
+    //       console.log(response);
+    //     })
+    //     .catch(function (error) {
+    //       // handle error
+    //       console.log(error);
+    //     })
+    //     .finally(function () {
+    //       // always executed
+    //     });
+    // }
   }
 }
 </script>

@@ -1,6 +1,5 @@
 <template>
   <div class="IndexPage container">
-    <h1>{{ msg }}</h1>
     <form>
       <div class="form-group">
         <label for="exampleInputEmail1">Email address</label>
@@ -23,7 +22,7 @@
 
 <script>
 export default {
-  name: 'IndexPage',
+  name: 'AddUser',
   props: {
     msg: String
   }
