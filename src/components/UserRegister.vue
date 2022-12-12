@@ -1,7 +1,7 @@
 <template>
-  <div class="IndexPage container">
-    <!-- <router-link type="button" class="btn btn-primary mt-t" to="AddUser">add</router-link>
-    <router-link type="button" class="btn btn-primary mx-4 " to="MyHome">Home</router-link> -->
+  <div class="IndexPage container col-md-6 ">
+    <h1 class="mx-auto mb-5">Login</h1>
+    <router-link type="button" class="btn btn-primary" to="UserLogin">Login</router-link>
     <form>
       <div class="form-group">
         <label for="exampleInputEmail1">Email address</label>
@@ -20,14 +20,18 @@
 
 <script>
 export default {
-  name: 'AddUser',
+  name: 'UserLogin',
   props: {
     msg: String
+  },
+  methods(){
+    // let user ={
+
+    // }
   }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h3 {
   margin: 40px 0 0;

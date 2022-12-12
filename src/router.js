@@ -1,14 +1,26 @@
 import IndexPage from './components/IndexPage.vue'
 import AddUser from './components/AddUser.vue'
 import MyHome from './components/MyHome.vue'
+import UserLogin from './components/UserLogin.vue'
+import UserRegister from './components/UserRegister.vue'
 
 import { createRouter,createWebHistory } from 'vue-router'
 
 const routes = [
     {
+        name:"UserLogin",
+        component:UserLogin,
+        path:'/'
+    },
+    {
+        name:"UserRegister",
+        component:UserRegister,
+        path:'/'
+    },
+    {
         name:"IndexPage",
         component:IndexPage,
-        path:'/'
+        path:'/aaaa'
     },
     {
         name:"AddUser",

@@ -1,7 +1,9 @@
 <template>
-  <div class="IndexPage container">
+  <div class="IndexPage container col-md-6 ">
+    <h1 class="mx-auto mb-5">Login</h1>
     <!-- <router-link type="button" class="btn btn-primary mt-t" to="AddUser">add</router-link>
     <router-link type="button" class="btn btn-primary mx-4 " to="MyHome">Home</router-link> -->
+    
     <form>
       <div class="form-group">
         <label for="exampleInputEmail1">Email address</label>
@@ -14,15 +16,19 @@
         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
       </div>
       <button type="submit" class="btn btn-primary mt-4">Submit</button>
+      <router-link type="button" class="btn btn-primary mt-4 mx-3" to="Register">Register</router-link> 
     </form>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'AddUser',
+  name: 'UserLogin',
   props: {
     msg: String
+  },
+  data() {
+      return {}
   }
 }
 </script>

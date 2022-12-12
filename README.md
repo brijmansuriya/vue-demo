@@ -20,5 +20,17 @@ npm run build
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+npm install --save-dev vuejs-validators
+https://www.npmjs.com/package/vuejs-validators
+
+
+
+### API 1 command is pack and 2 is run api 
+```
+https://www.npmjs.com/package/json-server
+
+
+npm install -g json-server
+json-server --watch db.json
+
+```
